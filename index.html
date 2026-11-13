@@ -489,9 +489,9 @@ footer .req{display:block;font-size:12px;margin-top:4px}
 
 <script>
 (function(){
-  /* Ссылка на оплату Prodamus — заменить, когда будет готова */
-  var PAY_URL = "https://t.me/vadim_palii_bot";
-  document.querySelectorAll('.js-pay').forEach(function(a){ a.href = PAY_URL; a.target = "_blank"; a.rel = "noopener"; });
+  /* Оплата: страница pay (форма GetCourse), метки и cid передаются дальше */
+  var PAY_URL = "pay" + location.search;
+  document.querySelectorAll('.js-pay').forEach(function(a){ a.href = PAY_URL; a.removeAttribute("target"); a.removeAttribute("rel"); });
 
   var pad = function(n){ return (n<10?'0':'') + n; };
   function tick(){
@@ -538,7 +538,7 @@ footer .req{display:block;font-size:12px;margin-top:4px}
     e.preventDefault();
     if(!ok){var c=sheet.querySelector('.consent');c.classList.remove('nudge');void c.offsetWidth;c.classList.add('nudge');return;}
     var u=pay||document.querySelector('a.js-pay').href;close();
-    var w=window.open(u,'_blank');if(!w)location.href=u;
+    location.href=u;
   });
   sheet.addEventListener('click',function(e){if(e.target===sheet||e.target.classList.contains('x'))close();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
