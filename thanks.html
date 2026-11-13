@@ -38,6 +38,10 @@ h1,h2{font-family:Unbounded,Manrope,sans-serif;letter-spacing:-.02em;line-height
 .note{margin-top:22px;padding:16px 18px;border-radius:16px;background:var(--surface-2);font-size:14px;color:var(--ink-2)}
 .note b{color:var(--ink)}
 .code{display:inline-block;padding:2px 8px;border-radius:8px;background:#fff;font-weight:800;color:var(--ink)}
+.howto{margin:0 0 20px;padding:16px 18px;border-radius:16px;background:#fff8e8;box-shadow:inset 0 0 0 1.5px rgba(255,176,32,.45)}
+.howto-t{font:800 13px/1 Manrope,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);margin-bottom:12px}
+.st{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--ink-2);margin-top:10px}
+.st b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-content:center;font:800 13px/1 Manrope,sans-serif}
 footer{padding:26px 0 40px;color:var(--muted);font-size:12px;line-height:1.6;text-align:center}
 footer a{color:var(--muted)}
 </style>
@@ -55,7 +59,14 @@ footer a{color:var(--muted)}
   <section class="card">
     <div class="ok">✅ Доступ к практикуму открыт</div>
     <h2>Уроки уже ждут тебя в Telegram</h2>
-    <p>Весь практикум проходит в Telegram-боте: видеоуроки, задания, трекер и поддержка. Нажми кнопку — откроется чат, а там уже лежит приветствие и первый урок.</p>
+    <p>Весь практикум проходит в Telegram-боте: видеоуроки, задания, трекер и поддержка.</p>
+
+    <div class="howto">
+      <div class="howto-t">Как получить доступ</div>
+      <div class="st"><b>1</b><span>Нажми кнопку ниже — откроется Telegram-бот.</span></div>
+      <div class="st"><b>2</b><span>Пришли из бота по кнопке «Оплатить»? Уроки уже в чате (или придут в течение пары минут).</span></div>
+      <div class="st"><b>3</b><span>Оплачивал(а) на сайте напрямую? Нажми в боте «Старт» и напиши слово <span class="code">ДОСТУП</span>, затем почту, указанную при оплате. Уроки откроются сразу.</span></div>
+    </div>
 
     <a class="btn" href="https://t.me/vadim_palii_bot">🚀 Открыть уроки в Telegram</a>
 
@@ -65,9 +76,6 @@ footer a{color:var(--muted)}
       <div>💬 <span>Если что-то не открывается — напиши в боте <b>«помощь»</b>, ответим лично.</span></div>
     </div>
 
-    <div class="note">
-      Оплачивал(а) на сайте, а не из бота? Открой бот кнопкой выше, нажми «Старт» и отправь слово <span class="code">ДОСТУП</span> — бот попросит почту, которую ты указал при оплате, и сразу откроет уроки.
-    </div>
   </section>
 </main>
 
