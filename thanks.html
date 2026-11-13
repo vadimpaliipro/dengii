@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Оплата прошла · Быстрые деньги</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fb;--surface:#fff;--surface-2:#e9eef8;--ink:#0a1230;--ink-2:#3c4669;--muted:#6b7594;--brand-2:#1c4fd8;--accent:#ffb020;--accent-ink:#1a1100;--hero:#092063;--on-hero:#eef2ff;--on-hero-2:rgba(238,242,255,.72);--ok:#0e9f6e;--shadow:0 18px 50px -20px rgba(10,30,100,.35)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:500 16px/1.55 Manrope,system-ui,sans-serif;-webkit-text-size-adjust:100%}
+a{color:inherit}
+h1,h2{font-family:Unbounded,Manrope,sans-serif;letter-spacing:-.02em;line-height:1.1}
+.wrap{max-width:720px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right)) 0 max(16px,env(safe-area-inset-left))}
+.head{background:var(--hero);color:var(--on-hero);padding:max(14px,env(safe-area-inset-top)) 0 120px}
+.bar{display:flex;align-items:center;height:56px}
+.logo{font:700 15px/1 Unbounded,Manrope,sans-serif;text-decoration:none}
+.logo span{opacity:.6;font-weight:500}
+.steps{display:flex;gap:8px;margin:30px 0 18px;font:700 12px/1 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;flex-wrap:wrap}
+.steps span{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.08);color:var(--on-hero-2)}
+.steps span.done{background:rgba(14,159,110,.25);color:#b8f2d9}
+.steps span.on{background:var(--accent);color:var(--accent-ink)}
+.head h1{font-size:clamp(30px,6vw,52px);font-weight:800}
+.head h1 em{font-style:normal;color:var(--accent)}
+.card{background:var(--surface);border-radius:24px;box-shadow:var(--shadow);padding:clamp(22px,4vw,36px);margin-top:-88px}
+.ok{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(14,159,110,.12);color:var(--ok);font-weight:800;font-size:14px;margin-bottom:16px}
+.card h2{font-size:22px;font-weight:700;margin-bottom:10px}
+.card p{color:var(--ink-2);margin-bottom:22px}
+.btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;min-height:66px;border-radius:999px;text-decoration:none;
+  background:var(--accent);color:var(--accent-ink);font:800 19px/1 Manrope,sans-serif;box-shadow:0 14px 34px -10px rgba(255,176,32,.8);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.list{display:grid;gap:12px;margin:26px 0 0;padding-top:22px;border-top:1px solid rgba(10,18,48,.1)}
+.list div{display:flex;gap:12px;color:var(--ink-2);font-size:15px}
+.list b{color:var(--ink)}
+.note{margin-top:22px;padding:16px 18px;border-radius:16px;background:var(--surface-2);font-size:14px;color:var(--ink-2)}
+.note b{color:var(--ink)}
+.code{display:inline-block;padding:2px 8px;border-radius:8px;background:#fff;font-weight:800;color:var(--ink)}
+footer{padding:26px 0 40px;color:var(--muted);font-size:12px;line-height:1.6;text-align:center}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="head">
+  <div class="wrap">
+    <div class="bar"><a class="logo" href="./">Быстрые деньги <span>· Вадим Палий</span></a></div>
+    <div class="steps"><span class="done">✓ Выбор</span><span class="done">✓ Оплата</span><span class="on">3 · Доступ</span></div>
+    <h1>Оплата прошла. <em>Добро пожаловать!</em></h1>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <div class="ok">✅ Доступ к практикуму открыт</div>
+    <h2>Уроки уже ждут тебя в Telegram</h2>
+    <p>Весь практикум проходит в Telegram-боте: видеоуроки, задания, трекер и поддержка. Нажми кнопку — откроется чат, а там уже лежит приветствие и первый урок.</p>
+
+    <a class="btn" href="https://t.me/vadim_palii_bot">🚀 Открыть уроки в Telegram</a>
+
+    <div class="list">
+      <div>🧾 <span><b>Чек</b> пришёл на почту, которую ты указал при оплате.</span></div>
+      <div>📊 <span>В первом уроке сохрани себе <b>трекер</b> — это рабочий инструмент на весь практикум.</span></div>
+      <div>💬 <span>Если что-то не открывается — напиши в боте <b>«помощь»</b>, ответим лично.</span></div>
+    </div>
+
+    <div class="note">
+      Оплачивал(а) на сайте, а не из бота? Открой бот кнопкой выше, нажми «Старт» и отправь слово <span class="code">ДОСТУП</span> — бот попросит почту, которую ты указал при оплате, и сразу откроет уроки.
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  ИП Пак Диана Валериановна · ИНН 302502015806 · ОГРНИП 321302500024762<br>
+  <a href="//vadimpalii.pro/oferta">Оферта</a> · <a href="//vadimpalii.pro/privacy">Политика</a> · <a href="//vadimpalii.pro/consent">Согласие</a>
+</footer>
+</body>
+</html>
